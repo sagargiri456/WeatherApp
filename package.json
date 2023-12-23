@@ -7,7 +7,7 @@
   //   "node": "20.9.0"
   // }
   "scripts": {
-    "start": "node Weather.js",
+    // "start": "node Weather.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "sagar giri",
