@@ -5,9 +5,17 @@ const bodyParser = require("body-parser");
 const https = require("https");
 // const ejs = require("ejs")
 const port = process.env.PORT || 5000
+
 app.set("view engine", "ejs");
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static(__dirname + "/public"));
+app.use(cors(
+  {
+origin: ["weather-52sxnbg4v-sagar-giris-projects.vercel.app"],
+method:["POST","GET"],
+credentials:true
+  }
+));
 app.get("/", (req, res) => {
   const cityimageurl = "citypng.png";
   const heading = "Weather App";
