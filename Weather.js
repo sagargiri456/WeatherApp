@@ -11,7 +11,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static(__dirname + "/public"));
 app.use(cors(
   {
-origin: ["weather-52sxnbg4v-sagar-giris-projects.vercel.app"],
+origin: ["weather-app-phi-six-51.vercel.appp"],
 method:["POST","GET"],
 credentials:true
   }
